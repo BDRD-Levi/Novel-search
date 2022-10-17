@@ -82,6 +82,7 @@ class SearchView(View):
                 }
             }
         )
+        print(response)
 
         end_time = datetime.now()
         last_seconds = (end_time-start_time).total_seconds()

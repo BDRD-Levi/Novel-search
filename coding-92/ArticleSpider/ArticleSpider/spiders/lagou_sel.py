@@ -36,7 +36,7 @@ class LagouSpider(CrawlSpider):
         chrome_opt=webdriver.ChromeOptions()
         prefs={"profile.managed_default_content_settings.images":2}
         chrome_opt.add_experimental_option("prefs",prefs)
-        browser = webdriver.Chrome(executable_path="E:/tmp/chromedriver.exe",chrome_options=chrome_opt)
+        browser = webdriver.Chrome(executable_path="/export/data/coding-92/chrome_nocdc/chromedriver.exe",chrome_options=chrome_opt)
         browser.get("https://passport.lagou.com/login/login.html?service=https%3a%2f%2fwww.lagou.com%2f")
         browser.find_elements_by_css_selector(".input.input_white")[0].send_keys("xxx")
         browser.find_elements_by_css_selector(".input.input_white")[1].send_keys("xx")

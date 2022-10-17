@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
+
+# 获取 free useragent
 __author__ = 'bobby'
 import requests
 from scrapy.selector import Selector
-import MySQLdb
+import pymysql as MySQLdb
 
-conn = MySQLdb.connect(host="127.0.0.1", user="root", passwd="root", db="article_spider", charset="utf8")
+conn = MySQLdb.connect(host="127.0.0.1", user="root", passwd="Leviapache@163.com", db="article_spider", charset="utf8")
 cursor = conn.cursor()
 
 

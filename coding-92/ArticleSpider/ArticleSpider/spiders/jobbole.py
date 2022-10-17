@@ -5,11 +5,12 @@ from scrapy.http import Request
 from urllib import parse
 import json
 
-from ArticleSpider.items import JobBoleArticleItem, ArticleItemLoader
+# from ArticleSpider.items import  ArticleItemLoader
+# from ArticleSpider.items import JobBoleArticleItem, ArticleItemLoader
 
 from ArticleSpider.utils.common import get_md5
 from selenium import webdriver
-from scrapy.xlib.pydispatch import dispatcher
+from pydispatch import dispatcher
 from scrapy import signals
 
 class JobboleSpider(scrapy.Spider):

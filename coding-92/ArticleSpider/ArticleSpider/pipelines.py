@@ -20,8 +20,8 @@ from twisted.enterprise import adbapi
 from models.es_types import ArticleType
 from w3lib.html import remove_tags
 
-import MySQLdb
-import MySQLdb.cursors
+import pymysql as MySQLdb
+import pymysql.cursors
 
 class ArticlespiderPipeline(object):
     def process_item(self, item, spider):
@@ -68,10 +68,10 @@ class MysqlTwistedPipline(object):
             user = settings["MYSQL_USER"],
             passwd = settings["MYSQL_PASSWORD"],
             charset='utf8',
-            cursorclass=MySQLdb.cursors.DictCursor,
+            cursorclass=pymysql.cursors.DictCursor,
             use_unicode=True,
         )
-        dbpool = adbapi.ConnectionPool("MySQLdb", **dbparms)
+        dbpool = adbapi.ConnectionPool("pymysql", **dbparms)
 
         return cls(dbpool)
 

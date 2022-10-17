@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@1.117.115.125:22 password" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="node2">
         <serverdata>
@@ -16,6 +16,20 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="root@1.117.115.125:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/export/data" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@1.117.115.125:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/export/data" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="root@192.168.88.161:22">
         <serverdata>
           <mappings>
@@ -24,5 +38,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

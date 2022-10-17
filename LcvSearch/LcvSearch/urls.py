@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from search.views import *
 from django.views.generic import TemplateView
-from LcvSearch.search.views import SearchSuggest, SearchView, IndexView
+
+# from LcvSearch.search.views import SearchView,IndexView,SearchSuggest
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
